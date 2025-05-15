@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <h1>Pong Game</h1>
+    <h2>Desenvolvido com a API Canvas</h2>
+    <h3>Em casos de bugs, reinicie o jogo abaixo.</h3>
+    <button onclick="restartGame()">Restart</button>
+    <style>
+        canvas {
+            border: 2px solid white;
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+            cursor: none;
+        }
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        #score {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Press Start 2P';
+            color: aqua;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Press Start 2P';
+            color: aqua;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Press Start 2P';
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Player: 0 | AI: 0</div>
+    <canvas id="meucanvas" width="700" height="600"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
